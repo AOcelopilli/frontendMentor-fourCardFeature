@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+  /* card colors */
+  --main-red: hsl(0, 78%, 62%);
+  --main-cyan: hsl(180, 62%, 55%);
+  --main-orange: hsl(34, 97%, 64%);
+  --main-blue: hsl(212, 86%, 64%);
+  /* Neutral */
+  --blue-dark: hsl(234, 12%, 34%);
+  --blue-gray: hsl(229, 6%, 66%);
+  --white-gray: hsl(0, 0%, 98%);
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,400px));
+  justify-content: center;
+  padding: 0 calc(1rem + 1vw);
+}
+
+
+main{
+  padding-top: 3rem;
+  text-align: center;
+}
+
+main h2{
+  font-weight: 200;
+  font-size: calc(1rem + 2vw);
+}
+
+main span{
+  display: block;
+  font-weight: 600;
+}
+
+main p {
+  font-weight: 200;
+  color: var(--blue-gray);
+  font-size: calc(0.5rem + 2vw);
+  padding: 1rem 0.5rem;
+}
+
+.cards > *{
+  margin-top: 2rem;
+}
+
+article{
+  box-shadow: 0px 10px 20px 7px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: 0px 10px 20px 7px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0px 10px 20px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+  padding: 1rem 2rem;
+  min-height: 200px;
+  position: relative;
+}
+
+article h2{
+  font-size: calc(1rem + 1vw);
+  color: var(--blue-dark);
+  margin-bottom: 0.5rem;
+}
+
+article p{
+  color: var(--blue-gray);
+  font-size: calc(0.5rem + 1vw);
+}
+
+article object{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+article:nth-child(1) {
+  border-top: thick solid var(--main-cyan);
+}
+
+article:nth-child(2) {
+  border-top: thick solid var(--main-red);
+}
+
+article:nth-child(3) {
+  border-top: thick solid var(--main-orange);
+}
+
+article:nth-child(4) {
+  border-top: thick solid var(--main-blue);
+}
+
+/* atribution */
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
