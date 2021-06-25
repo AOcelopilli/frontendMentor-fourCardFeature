@@ -80,6 +80,8 @@ article p{
 
 article div{
   position: absolute;
+  width: auto;
+  height: 30%;
   bottom: 10%;
   right: 10%;
 }
